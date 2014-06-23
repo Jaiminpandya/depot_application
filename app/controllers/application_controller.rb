@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-  before_filter :authorize
   protect_from_forgery
+  before_filter :authorize
 
   private
 
@@ -18,7 +18,6 @@ class ApplicationController < ActionController::Base
         redirect_to login_url, notice: "Please log in"
       end
     end
-
 end
 
   
