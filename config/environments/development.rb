@@ -17,6 +17,7 @@ Depot::Application.configure do
 
  
   config.action_mailer.delivery_method = :test
+  config.action_mailer.perform_deliveries = true
   # Don't actually send emails
   #
   # Alternate configuration example, using gmail:
